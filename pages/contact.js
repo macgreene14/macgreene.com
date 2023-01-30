@@ -14,7 +14,6 @@ export default function Contact() {
             id="email"
             className="opacity-0 fixed top-0 left-0 w-0 h-0"
             placeholder=""
-            required
           />
           {/* --- */}
           <label>Email</label>

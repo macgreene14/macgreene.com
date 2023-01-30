@@ -1,4 +1,5 @@
 import screenshot1 from "../public/assets/img/weather-dashboard.png";
+
 export default function Portfolio() {
   console.log(screenshot1);
   return (
@@ -8,31 +9,31 @@ export default function Portfolio() {
       </h1>
       <section className="flex flex-wrap justify-center p-4">
         {/* Card 1 */}
-        <div className="max-w-sm rounded overflow-hidden shadow-lg border-2 m-4 ">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg border-2 m-4 ">
           <img
             className="w-full"
             src={screenshot1.src}
             alt="weather-dashboard"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Weather Dashboard</div>
+            <div className="font-bold text-xl mb-2">SKIMAIL</div>
             <p className="text-gray-700 text-base">
-              A minimalist dashboard for viewing current weather in a selected
-              city. Current and 5-day forecated are rendered to view.
+              A travel research platform for finding the best flight fare to
+              every Ikon ski resort.
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #Javascript
+              #React
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #Bootstrap
+              #TailwindCSS
             </span>
           </div>
         </div>
 
         {/* Card 2 */}
-        <div className="max-w-sm rounded overflow-hidden shadow-lg border-2  m-4 ">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg border-2  m-4 ">
           <img
             className="w-full"
             src={screenshot1.src}
@@ -41,8 +42,8 @@ export default function Portfolio() {
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">Weather Dashboard</div>
             <p className="text-gray-700 text-base">
-              A minimalist dashboard for viewing current weather in a selected
-              city. Current and 5-day forecated are rendered to view.
+              A minimalist dashboard for viewing current and forecasted weather
+              for a selected city.
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
@@ -56,38 +57,38 @@ export default function Portfolio() {
         </div>
 
         {/* Card 3 */}
-        <div className="max-w-sm rounded overflow-hidden shadow-lg border-2  m-4">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg border-2  m-4">
           <img
             className="w-full"
             src={screenshot1.src}
             alt="weather-dashboard"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Weather Dashboard</div>
+            <div className="font-bold text-xl mb-2">Blog</div>
             <p className="text-gray-700 text-base">
-              A minimalist dashboard for viewing current weather in a selected
-              city. Current and 5-day forecated are rendered to view.
+              A simple blog with authentication which allows users to post
+              snippets of content.
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #Javascript
+              #Handlebars
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #Bootstrap
+              #MongoDB
             </span>
           </div>
         </div>
 
         {/* Card 4 */}
-        <div className="max-w-sm rounded overflow-hidden shadow-lg border-2  m-4 ">
+        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg border-2  m-4 ">
           <img
             className="w-full"
             src={screenshot1.src}
             alt="weather-dashboard"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">Weather Dashboard</div>
+            <div className="font-bold text-xl mb-2">Novelty Book Swap</div>
             <p className="text-gray-700 text-base">
               A minimalist dashboard for viewing current weather in a selected
               city. Current and 5-day forecated are rendered to view.

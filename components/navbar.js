@@ -35,7 +35,7 @@ export default function Navbar({ children }) {
       <Disclosure as="nav" className="bg-gray-800">
         {({ open }) => (
           <>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-2">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
@@ -59,7 +59,7 @@ export default function Navbar({ children }) {
                             item.current
                               ? "bg-gray-900 text-white"
                               : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-medium"
+                            "px-3 py-2 rounded-md text-lg font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
