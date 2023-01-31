@@ -40,7 +40,7 @@ export default function Portfolio() {
         <Card
           src={screenshot3.src}
           title="Text Editor"
-          desc="A simple text editor which persists state when offline. Downloadable as a PWA."
+          desc="A simple text editor which persists state when offline. Downloadable as a PWA. Web Only. "
           tag1="PWA"
           tag2="Express"
           href="https://text-editor-mgreene.herokuapp.com/"
