@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import motorcycle from "../public/assets/img/motorcycle.png";
+import Link from "next/link";
+
+// import motorcycle from "../public/assets/img/motorcycle.png";
 
 export default function Home() {
   return (
@@ -14,12 +16,26 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-cover bg-[url('../public/assets/img/motorcycle.png')]"></div>
-      <h1 className="text-gray-800 font-normal text-3xl sm:text-5xl md:text-6xl my-2 sm:my-5 text-center">
-        {" "}
-        Hello
-      </h1>
-      <p className="text-gray-800 font-normal text-base sm:text-lg md:text-xl m-auto max-w-2xl text-center"></p>
+
+      <div className="bg-container"></div>
+
+      <section className="fixed text-right top-20 right-0 sm:right-5 m-3 p-3">
+        <h1>
+          My name is <span className="font-bold">Mac</span>
+        </h1>
+        <h1>I like to build cool things</h1>
+        <Link href="/portfolio">
+          <h1 className="underline">Web Development</h1>
+        </Link>
+
+        <Link href="/portfolio/#solar">
+          <h1 className="underline">Solar Projects</h1>
+        </Link>
+
+        {/* <Link href="/portfolio/#water">
+          <h1 className="underline">Water Systems</h1>
+        </Link> */}
+      </section>
     </div>
   );
 }

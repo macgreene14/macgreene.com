@@ -68,6 +68,17 @@ export default function Navbar({ children }) {
                       ))}
                     </div>
                   </div>
+                  <a
+                    href="/assets/pdf/MacGreeneResume2023.pdf"
+                    download
+                    className={
+                      asPath === "/resume"
+                        ? "btn-download"
+                        : "btn-download hidden"
+                    }
+                  >
+                    <button>Download PDF</button>
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,9 +1,8 @@
 export default function Contact() {
   return (
-    <div className="bg-container" alt="skier on top of ridge">
-      <div className="form-container">
-        <h3 className="font-bold">Contact Me</h3>
-        <h4>Feel free to drop me a line anytime 📞</h4>
+    <div className="bg-container bg-[url('../public/assets/img/motorcycle.png')]">
+      <div className="form-container mt-24">
+        <h3 className="font-bold">Let&apos;s Build Together</h3>
         <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
 
@@ -38,7 +37,7 @@ export default function Contact() {
           <textarea
             name="message"
             id="message"
-            rows="6"
+            rows="12"
             placeholder="Leave a comment..."
           />
           <button type="submit" className="btn-form">
