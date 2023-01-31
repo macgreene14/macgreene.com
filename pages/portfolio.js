@@ -14,8 +14,8 @@ export default function Portfolio() {
   console.log(screenshot1);
   return (
     <div className="flex flex-col items-center justify-start bg-gray-400">
-      <h1 className="text-center font-bold backdrop-blur-2xl rounded-2xl pt-4">
-        Web Development
+      <h1 className="text-center font-extrabold backdrop-blur-2xl rounded-2xl pt-4">
+        Web Development 💻
       </h1>
       <section className="flex flex-wrap justify-center">
         <Card
@@ -56,8 +56,8 @@ export default function Portfolio() {
         />
       </section>
 
-      <h1 className="text-center font-bold backdrop-blur-2xl rounded-2xl py-4">
-        Solar Projects
+      <h1 className="text-center font-extrabold backdrop-blur-2xl rounded-2xl pt-20">
+        Solar Projects ☀️
       </h1>
       <section className="flex flex-wrap justify-center p-4">
         <Card
@@ -67,7 +67,7 @@ export default function Portfolio() {
           plant on the big island."
           tag1="130MW"
           tag2="Hawaii"
-          href="https://www.skimail.co"
+          href="https://www.clearwayenergygroup.com/press-releases/clearway-completes-oahus-first-utility-scale-solar-storage-power-plant/"
         />
         <Card
           src={screenshot6.src}
