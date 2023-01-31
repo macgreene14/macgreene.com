@@ -5,7 +5,7 @@ export default function Card(props) {
     <Link href={props.href}>
       <section className="flex flex-wrap justify-center p-4">
         <div className="max-w-sm rounded-lg overflow-hidden shadow-lg m-4 bg-gray-200 ">
-          <img className="w-full h-96" src={props.src} alt={props.title} />
+          <img className="w-full sm:h-96" src={props.src} alt={props.title} />
           <div className="px-6 py-4 h-30">
             <div className="font-bold text-xl mb-2">{props.title}</div>
             <p className="text-gray-700 text-base">{props.desc}</p>
