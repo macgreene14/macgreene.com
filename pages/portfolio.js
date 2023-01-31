@@ -14,10 +14,10 @@ export default function Portfolio() {
   console.log(screenshot1);
   return (
     <div className="flex flex-col items-center justify-start bg-gray-400">
-      <h1 className="text-center backdrop-blur-2xl rounded-2xl pt-4">
+      <h1 className="text-center font-bold backdrop-blur-2xl rounded-2xl pt-4">
         Web Development
       </h1>
-      <section className="flex flex-wrap justify-center p-2">
+      <section className="flex flex-wrap justify-center">
         <Card
           src={screenshot1.src}
           title="SKIMAIL"
@@ -56,7 +56,7 @@ export default function Portfolio() {
         />
       </section>
 
-      <h1 className="text-center backdrop-blur-2xl rounded-2xl py-4">
+      <h1 className="text-center font-bold backdrop-blur-2xl rounded-2xl py-4">
         Solar Projects
       </h1>
       <section className="flex flex-wrap justify-center p-4">
@@ -72,7 +72,7 @@ export default function Portfolio() {
         <Card
           src={screenshot6.src}
           title="Townsite"
-          desc="A project located near Las Vegas. Capacity to power 60,000 homes."
+          desc="Townsite is a project located near Las Vegas with PV capacity to power 60,000 homes."
           tag1="232MW"
           tag2="Nevada"
           href="https://www.rosendin.com/project/townsite-solar-facility/"
@@ -88,8 +88,7 @@ export default function Portfolio() {
         <Card
           src={screenshot8.src}
           title="Calhoun"
-          desc="A project on Oahu, touted as replacing the last coal fired power
-          plant on the big island."
+          desc="At 1,200 acres, the Calhoun project is one of the largest renewable plants in Michigan."
           tag1="200MW"
           tag2="Michigan"
           href="https://invenergy.com/news/invenergy-completes-construction-financing-for-calhoun-solar"
