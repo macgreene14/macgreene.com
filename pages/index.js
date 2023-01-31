@@ -24,6 +24,7 @@ export default function Home() {
           My name is <span className="font-bold">Mac</span>
         </h1>
         <h1>I like to build cool things</h1>
+
         <Link href="/portfolio">
           <h1 className="underline">Web Development</h1>
         </Link>

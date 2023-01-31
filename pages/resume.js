@@ -1,4 +1,4 @@
-import resume from "../public/assets/img/resume.png";
+import resume from "../public/assets/img/MacGreeneResume2023.png";
 
 export default function Resume() {
   return (

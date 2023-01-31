@@ -1,7 +1,7 @@
 import screenshot1 from "../public/assets/img/skimail.png";
 import screenshot2 from "../public/assets/img/weather-dashboard.png";
-import screenshot3 from "../public/assets/img/tech-blog.png";
-import screenshot4 from "../public/assets/img/novelty.png";
+import screenshot3 from "../public/assets/img/text-editor.png";
+import screenshot4 from "../public/assets/img/quiz-game.png";
 
 import screenshot5 from "../public/assets/img/mililani.png";
 import screenshot6 from "../public/assets/img/townsite.png";
@@ -39,21 +39,20 @@ export default function Portfolio() {
 
         <Card
           src={screenshot3.src}
-          title="Blog"
-          desc="A simple blog with authentication which allows users to post
-          snippets of content."
-          tag1="Handlebars"
-          tag2="MongoDB"
-          href="https://tech-blog-mgreene.herokuapp.com/"
+          title="Text Editor"
+          desc="A simple text editor which persists state when offline. Downloadable as a PWA."
+          tag1="PWA"
+          tag2="Express"
+          href="https://text-editor-mgreene.herokuapp.com/"
         />
 
         <Card
           src={screenshot4.src}
-          title="Novelty Book Swap"
-          desc="A book sharing platform which connects via a communal library"
-          tag1="Handlebars"
-          tag2="MongoDB"
-          href="https://www.skimail.co"
+          title="JS Quiz Game"
+          desc="Test your javascript knowledge base with this interative quiz game!"
+          tag1="Javascript"
+          tag2="CSS"
+          href="https://macgreene14.github.io/quiz-game/"
         />
       </section>
 
