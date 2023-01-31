@@ -1,9 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import Navbar from "../components/navbar";
 import Link from "next/link";
-
-// import motorcycle from "../public/assets/img/motorcycle.png";
 
 export default function Home() {
   return (
@@ -26,16 +22,8 @@ export default function Home() {
         <h1>I like to build cool things</h1>
 
         <Link href="/portfolio">
-          <h1 className="underline">Web Development</h1>
+          <h1 className="underline">Explore Portfolio</h1>
         </Link>
-
-        <Link href="/portfolio/#solar">
-          <h1 className="underline">Solar Projects</h1>
-        </Link>
-
-        {/* <Link href="/portfolio/#water">
-          <h1 className="underline">Water Systems</h1>
-        </Link> */}
       </section>
     </div>
   );

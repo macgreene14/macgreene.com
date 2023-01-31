@@ -1,11 +1,10 @@
 export default function Contact() {
   return (
     <div className="bg-container bg-[url('../public/assets/img/motorcycle.png')]">
-      <div className="form-container mt-24">
+      <div className="form-container mt-12">
         <h3 className="font-bold">Let&apos;s Build Together</h3>
         <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
-
           {/* --- */}
           <input
             type="email"
