@@ -16,11 +16,11 @@ export default function Navbar() {
     //   href: "/portfolio",
     //   current: asPath === "/portfolio" ? true : false,
     // },
-    {
-      name: "Resume",
-      href: "/resume",
-      current: asPath === "/resume" ? true : false,
-    },
+    // {
+    //   name: "Resume",
+    //   href: "/resume",
+    //   current: asPath === "/resume" ? true : false,
+    // },
     {
       name: "Contact",
       href: "/contact",
