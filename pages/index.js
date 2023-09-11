@@ -23,7 +23,7 @@ export default function Home() {
           specific needs, allowing you to concentrate on what truly matters. Let
           us handle the intricacies of software development, so you can focus on
           the essential business activities that make the beer taste even
-          better. Partner with us, and watch your digital dreams come to life.
+          better.
         </p>
 
         <div className="mt-10 max-w-2xl">
