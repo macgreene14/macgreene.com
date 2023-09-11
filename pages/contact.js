@@ -142,6 +142,7 @@ export default function ContactUs() {
           >
             <strong class="font-bold">Sweet!</strong>
             <span class="block sm:inline">
+              {" "}
               Your message has been sent successfully!
             </span>
           </div>
@@ -151,8 +152,9 @@ export default function ContactUs() {
             class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
             role="alert"
           >
-            <strong class="font-bold">Error</strong>
+            <strong class="font-bold">Error: </strong>
             <span class="block sm:inline">
+              {" "}
               There was an error sending your message. Please try again later.
             </span>
           </div>

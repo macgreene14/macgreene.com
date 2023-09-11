@@ -7,6 +7,7 @@ const mailgun = require("mailgun-js")({
 });
 
 async function sendEmail(req, res) {
+  console.log(API_KEY);
   try {
     const { subject, message } = req.body;
     await mailgun.messages().send({
