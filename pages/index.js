@@ -9,20 +9,22 @@ export default function Home() {
   return (
     <div>
       <div className="bg-white px-6 py-8 lg:px-8 rounded-lg">
-        <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+        <div className="mx-auto max-w-2xl text-base leading-7 text-gray-700">
           {/* <p className="text-md font-semibold leading-7 text-indigo-600 text-center">
           Mac Greene
         </p> */}
+          <h1 className="mt-2 text-3xl font-normal tracking-tight text-gray-600 sm:text-4xl text-center">
+            Small Business
+          </h1>
           <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-            Small Business Tech Solutions
+            Technology Solutions
           </h1>
           <p className="mt-6 text-xl leading-8">
             I specialize in crafting bespoke software solutions tailored to your
-            specific business needs, supercharging workflows and allowing you to
-            concentrate on what truly matters. Let me handle the intricacies of
-            software development and implementation, so you can focus on the
-            essential business activities that make the beer taste better.
-            Contact today for a free consultation.
+            specific business needs to supercharge your workflows. Let me handle
+            the intricacies of software development and implementation, so you
+            can focus on the essential business activities that make the beer
+            taste better. Contact today for a free consultation.
           </p>
 
           <div className="mt-10 max-w-2xl">
@@ -84,7 +86,7 @@ export default function Home() {
 
           <figure className="mt-8">
             <Image
-              className="aspect-square w-1/2 rounded-xl bg-gray-50 object-cover mx-auto"
+              className="aspect-square w-3/4 md:w-1/2 rounded-xl bg-gray-50 object-cover mx-auto"
               src="https://ik.imagekit.io/bamlnhgnz/compy2.png?"
               alt="Retro Computer"
               width={100}
