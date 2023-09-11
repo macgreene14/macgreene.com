@@ -24,13 +24,13 @@ code {
 @layer components {
 
   .btn-form {
-    @apply block w-1/2 md:w-1/3 p-3 my-4 text-sm rounded-lg border shadow-xl focus:ring-gray-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:border-gray-500
+    @apply block w-1/2 md:w-1/3 p-3 my-4 text-sm rounded-lg border shadow-xl focus:ring-gray-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:border-gray-500 mx-auto
   }
   .btn-download {
     @apply mx-auto bg-blue-200 bg-opacity-50 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded
   }
   .form-container {
-    @apply h-fit w-11/12 md:w-1/2 backdrop-blur-3xl p-2 my-8
+    @apply h-fit w-11/12 md:w-1/2 backdrop-blur-3xl p-2 my-8 max-w-2xl
   }
   .form-alert-error {
     @apply p-4 mb-4 text-sm rounded-lg bg-red-200 text-red-800
