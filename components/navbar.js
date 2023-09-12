@@ -11,11 +11,11 @@ export default function Navbar() {
   let { asPath } = useRouter();
   const navigation = [
     { name: "About", href: "/", current: asPath === "/" ? true : false },
-    // {
-    //   name: "Portfolio",
-    //   href: "/portfolio",
-    //   current: asPath === "/portfolio" ? true : false,
-    // },
+    {
+      name: "Portfolio",
+      href: "/portfolio",
+      current: asPath === "/portfolio" ? true : false,
+    },
     // {
     //   name: "Resume",
     //   href: "/resume",
