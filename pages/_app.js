@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import Navbar from "../components/navbar";
 import Head from "next/head";
 import Footer from "../components/footer";
+import { Analytics } from "@vercel/analytics/react";
 function MyApp({ Component, pageProps }) {
   return (
     <div>
@@ -10,9 +11,12 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Mac Greene" />
         <link rel="icon" href="/compy.png" />
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <div>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+        <Analytics />
+      </div>
     </div>
   );
 }
