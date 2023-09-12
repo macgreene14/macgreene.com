@@ -86,9 +86,12 @@ export default function ContactUs() {
   return (
     <div className="bg-container bg-[url('../public/assets/img/motorcycle.png')]">
       <div className="form-container mt-8">
-        <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
+        <h1 className="mt-2 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 text-center">
           Let&apos;s Build Together
-        </h3>
+        </h1>
+        <h1 className="mt-2 text-2xl md:text-3xl font-extralight tracking-tight text-gray-900 text-center">
+          Contact for a free consultation
+        </h1>
         <form name="contact" method="post" onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
           <label>Email</label>
