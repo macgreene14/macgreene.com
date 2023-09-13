@@ -78,7 +78,7 @@ export default function Home() {
                   unbounded automation capabilities.
                 </span>
               </li>
-              <li className="flex gap-x-3">
+              {/* <li className="flex gap-x-3">
                 <CheckCircleIcon
                   className="mt-1 h-5 w-5 flex-none text-indigo-600"
                   aria-hidden="true"
@@ -90,7 +90,7 @@ export default function Home() {
                   Build out your SOP&apos;s on integrated platforms such as
                   Confluence and Jira.
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
 

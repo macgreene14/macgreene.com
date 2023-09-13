@@ -29,7 +29,7 @@ export default function Portfolio() {
 
         <Card
           src={screenshot2.src}
-          title="Home & Office Transtions"
+          title="Home & Office Transitions"
           desc="Developed a website and inventory tracking system for a warehouse receiving facility."
           tag1="Wix"
           tag2="Airtable"
@@ -39,7 +39,7 @@ export default function Portfolio() {
         <Card
           src={screenshot3.src}
           title="Solar Engineering Tooling"
-          desc="Developed an application for running solar performance analyses and creating reports."
+          desc="Created an application for running solar performance analyses and creating reports."
           tag1="Retool"
           tag2="Azure Functions"
           href=""
