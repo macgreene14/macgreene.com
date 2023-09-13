@@ -53,10 +53,10 @@ export default function ContactUs() {
 
     if (isValidForm) {
       setButtonText("Sending");
-      const res = await fetch("/api/mailgun", {
+      const res = await fetch("/api/sparkpost", {
         body: JSON.stringify({
           email: email,
-          fullname: fullname,
+          fullName: fullname,
           subject: subject,
           message: message,
         }),
