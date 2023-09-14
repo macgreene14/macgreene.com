@@ -3,6 +3,8 @@ import Navbar from "../components/navbar";
 import Head from "next/head";
 import Footer from "../components/footer";
 import { Analytics } from "@vercel/analytics/react";
+import GA from "../utils/GA";
+
 function MyApp({ Component, pageProps }) {
   return (
     <div>
@@ -16,6 +18,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer />
         <Analytics />
+        <GA />
       </div>
     </div>
   );
