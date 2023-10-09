@@ -1,6 +1,7 @@
 import screenshot1 from "../public/assets/img/skimail.png";
 import screenshot2 from "../public/assets/img/hot.png";
 import screenshot3 from "../public/assets/img/retool.png";
+import screenshot4 from "../public/assets/img/fff_logo.png";
 
 import Card from "../components/card";
 
@@ -18,6 +19,14 @@ export default function Portfolio() {
         </h2>
       </div>
       <section className="flex flex-wrap justify-center">
+        <Card
+          src={screenshot4.src}
+          title="Forest Fuel Finder"
+          desc="Digitized USDA firewood maps for collection around Bozeman, MT."
+          tag1="Next"
+          tag2="Mapbox.js"
+          href="https://forest-fuel-finder.vercel.app/"
+        />
         <Card
           src={screenshot1.src}
           title="SKIMAIL"

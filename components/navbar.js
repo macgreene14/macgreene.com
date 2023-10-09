@@ -16,6 +16,11 @@ export default function Navbar() {
       href: "/portfolio",
       current: asPath === "/portfolio" ? true : false,
     },
+    {
+      name: "Freelance",
+      href: "/freelance",
+      current: asPath === "/freelance" ? true : false,
+    },
     // {
     //   name: "Resume",
     //   href: "/resume",

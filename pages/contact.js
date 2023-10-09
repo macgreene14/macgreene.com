@@ -84,8 +84,8 @@ export default function ContactUs() {
     }, 5000);
   };
   return (
-    <div className="bg-container bg-[url('../public/assets/img/motorcycle.png')]">
-      <div className="form-container mt-8">
+    <div className="bg-container">
+      <div className="form-container mt-8  shadow-lg border-2 border-solid border-[#e07274] rounded-md">
         <h1 className="mt-2 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 text-center">
           Let&apos;s Build Together
         </h1>
