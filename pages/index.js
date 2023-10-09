@@ -28,8 +28,8 @@ export default function Home() {
           </p>
 
           <p className="mt-6 text-xl leading-8">
-            I&aposm always on the lookout to collaborate with teams that share a
-            passion for problem-solving and making an impact. I&aposm
+            I&apos;m always on the lookout to collaborate with teams that share
+            a passion for problem-solving and making an impact. I&apos;m
             particularly interested in utilizing tech to assist with the many
             pressing environmental issues at-hand.
           </p>
