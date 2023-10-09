@@ -39,8 +39,7 @@ code {
     @apply p-4 mb-4 text-sm rounded-lg bg-green-200 text-green-800
   }
   .bg-container {
-    @apply  flex flex-col items-center justify-start bg-cover bg-center h-screen bg-[url("../public/assets/img/motorcycle.png")]
-  }
+    @apply  flex flex-col items-center justify-start bg-cover bg-center h-screen  }
   .text-container {
     @apply w-11/12 sm:w-8/12
   }
