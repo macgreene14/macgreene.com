@@ -1,11 +1,8 @@
-import {
-  CheckCircleIcon,
-  InformationCircleIcon,
-} from "@heroicons/react/20/solid";
+import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Consulting() {
   return (
     <div>
       <div className="bg-white px-6 py-8 lg:px-8 rounded-lg">
@@ -13,9 +10,9 @@ export default function Home() {
           <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-gray-900 text-center">
             Technology Solutions
           </h1>
-          <h2 className="text-3xl md:text-4xl font-normal tracking-tight text-gray-600  text-center">
+          {/* <h2 className="text-3xl md:text-4xl font-normal tracking-tight text-gray-600  text-center">
             for Small Businesses
-          </h2>
+          </h2> */}
           <p className="mt-6 text-xl leading-8">
             I specialize in crafting bespoke software solutions tailored to your
             specific business needs. Let me handle the intricacies of software

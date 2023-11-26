@@ -17,15 +17,10 @@ export default function Navbar() {
       current: asPath === "/portfolio" ? true : false,
     },
     {
-      name: "Freelance",
-      href: "/freelance",
-      current: asPath === "/freelance" ? true : false,
+      name: "Consulting",
+      href: "/consulting",
+      current: asPath === "/consulting" ? true : false,
     },
-    // {
-    //   name: "Resume",
-    //   href: "/resume",
-    //   current: asPath === "/resume" ? true : false,
-    // },
     {
       name: "Contact",
       href: "/contact",

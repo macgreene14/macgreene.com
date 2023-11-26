@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ContactUs() {
+export default function Contact() {
   // States for contact form fields
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
@@ -40,7 +40,7 @@ export default function ContactUs() {
     }
 
     setErrors({ ...tempErrors });
-    // console.log("errors", errors);
+    console.log("errors", errors);
     return isValid;
   };
 
@@ -84,8 +84,8 @@ export default function ContactUs() {
     }, 5000);
   };
   return (
-    <div className="bg-container">
-      <div className="form-container mt-8  shadow-lg border-2 border-solid border-[#e07274] rounded-md">
+    <div className="flex flex-col items-center justify-center bg-cover bg-center">
+      <div className="w-11/12 md:w-1/2 backdrop-blur-3xl p-2 my-8 max-w-2xl shadow-lg border-2 border-solid border-[#e07274] rounded-md">
         <h1 className="mt-2 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 text-center">
           Let&apos;s Build Together
         </h1>
@@ -133,7 +133,10 @@ export default function ContactUs() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button type="submit" className="btn-form">
+          <button
+            type="submit"
+            className="block w-1/2 md:w-1/3 p-3 my-4 text-sm rounded-lg border shadow-xl focus:ring-gray-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:border-gray-500 mx-auto"
+          >
             {buttonText}
           </button>
         </form>
@@ -145,7 +148,6 @@ export default function ContactUs() {
           >
             <strong class="font-bold">Sweet!</strong>
             <span class="block sm:inline">
-              {" "}
               Your message has been sent successfully!
             </span>
           </div>
@@ -157,7 +159,6 @@ export default function ContactUs() {
           >
             <strong class="font-bold">Error: </strong>
             <span class="block sm:inline">
-              {" "}
               There was an error sending your message. Please try again later.
             </span>
           </div>

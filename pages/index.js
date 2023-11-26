@@ -1,11 +1,63 @@
-import {
-  CheckCircleIcon,
-  InformationCircleIcon,
-} from "@heroicons/react/20/solid";
 import Image from "next/image";
-import Link from "next/link";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { createClient } from "contentful";
 
-export default function Home() {
+export async function getServerSideProps() {
+  // https://nextjs.org/docs/app/building-your-application/upgrading/app-router-migration#server-side-rendering-getserversideprops
+
+  const aboutEntryId = "5G3yTt87iy5RII8b8ZbNMd";
+  const contentfulEnv = "master";
+  const contentfulAPIKey = process.env.CONTENTFUL_API_KEY;
+  const contentfulSpaceId = process.env.CONTENTFUL_SPACE_ID;
+
+  // connect to contentful
+  const client = createClient({
+    space: contentfulSpaceId,
+    environment: contentfulEnv, // defaults to 'master' if not set
+    accessToken: contentfulAPIKey,
+  });
+
+  // fetch content for about
+  const content = await client
+    .getEntry(aboutEntryId)
+    .then((entry) => {
+      const content = entry.fields.content;
+      return content;
+    })
+    .catch(console.error);
+
+  return { props: { content } };
+}
+
+export default function About({ content }) {
+  const options = {
+    //https://github.com/contentful/rich-text/blob/master/packages/rich-text-types/src/nodeTypes.ts
+
+    renderNode: {
+      [BLOCKS.HEADING_2]: (node, children) => (
+        <h2 className="text-lg font-bold">{children}</h2>
+      ),
+
+      [BLOCKS.UL_LIST]: (node, children) => (
+        <ul className="list-disc ml-8">{children}</ul>
+      ), // note: same as "unordered-list" as str
+
+      [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
+        <Image
+          className="aspect-square w-1/2 rounded-xl bg-gray-50 object-cover mx-auto mt-8"
+          src={`https://${node.data.target.fields.file.url}`}
+          alt="Mac Greene Headshot"
+          width={100}
+          height={100}
+        />
+      ),
+    },
+  };
+
+  // convert document object to react component
+  const contentComponents = documentToReactComponents(content, options);
+
   return (
     <div>
       <div className="bg-white px-6 py-8 lg:px-8 rounded-lg">
@@ -13,36 +65,7 @@ export default function Home() {
           <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-gray-900 text-center">
             About
           </h1>
-          <h2 className="text-3xl md:text-4xl font-normal tracking-tight text-gray-600  text-center mt-0">
-            Mac Greene
-          </h2>
-          <p className="mt-6 text-xl leading-8">
-            As an F.E. certified engineer, I bring a diverse background in
-            utility solar project design, gravity-fed water system design, and
-            software development to the table.
-          </p>
-
-          <p className="mt-6 text-xl leading-8">
-            Currently, I&apos;m harnessing the power of web tools to address
-            real-world challenges faced by small businesses.
-          </p>
-
-          <p className="mt-6 text-xl leading-8">
-            I&apos;m always on the lookout to collaborate with teams that share
-            a passion for problem-solving and making an impact. I&apos;m
-            particularly interested in utilizing tech to assist with the many
-            pressing environmental issues at-hand.
-          </p>
-
-          <figure className="mt-8">
-            <Image
-              className="aspect-square w-3/4 md:w-1/2 rounded-xl bg-gray-50 object-cover mx-auto"
-              src="https://ik.imagekit.io/bamlnhgnz/headshot.jpeg?updatedAt=1696872069655"
-              alt="Mac Greene Headshot"
-              width={100}
-              height={100}
-            />
-          </figure>
+          <div>{contentComponents}</div>
         </div>
       </div>
     </div>
