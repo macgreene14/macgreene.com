@@ -39,10 +39,10 @@ export default function About({ content }) {
         <h2 className="text-xl font-bold text-center mt-8">{children}</h2>
       ),
       [BLOCKS.PARAGRAPH]: (node, children) => (
-        <p className="text-xl leading-8">{children}</p>
+        <p className="text-xl leading-8 text-center">{children}</p>
       ),
       [BLOCKS.UL_LIST]: (node, children) => (
-        <ul className="list-disc ml-2">{children}</ul>
+        <ul className="list-disc ml-2 text-center">{children}</ul>
       ), // note: same as "unordered-list" as str
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <Image
