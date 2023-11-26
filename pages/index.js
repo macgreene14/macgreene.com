@@ -38,11 +38,12 @@ export default function About({ content }) {
       [BLOCKS.HEADING_2]: (node, children) => (
         <h2 className="text-lg font-bold">{children}</h2>
       ),
-
+      [BLOCKS.PARAGRAPH]: (node, children) => (
+        <p className="text-xl leading-8">{children}</p>
+      ),
       [BLOCKS.UL_LIST]: (node, children) => (
         <ul className="list-disc ml-8">{children}</ul>
       ), // note: same as "unordered-list" as str
-
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <Image
           className="aspect-square w-1/2 rounded-xl bg-gray-50 object-cover mx-auto mt-8"

@@ -42,7 +42,6 @@ export default function Portfolio({ content }) {
       </div>
       <section className="flex flex-wrap justify-center mb-8">
         {content.map((entry) => {
-          console.log(entry.fields.thumbnail);
           return (
             <Card
               key={entry.fields.title}

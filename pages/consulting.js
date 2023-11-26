@@ -103,7 +103,7 @@ export default function Consulting() {
 
           <figure className="mt-8">
             <Image
-              className="aspect-square w-3/4 md:w-1/2 rounded-xl bg-gray-50 object-cover mx-auto"
+              className="aspect-square w-1/2 rounded-xl bg-gray-50 object-cover mx-auto"
               src="https://ik.imagekit.io/bamlnhgnz/compy2.png?"
               alt="Retro Computer"
               width={100}
