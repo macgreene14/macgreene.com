@@ -15,7 +15,7 @@ export default async function sendEmail(req, res) {
       recipients: [{ address: "macgreene14@gmail.com" }],
     });
     return res.status(200).json({ message: "Email sent successfully." });
-  } catch (e) {
+  } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
 }
