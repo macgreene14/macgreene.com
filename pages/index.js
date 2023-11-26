@@ -36,13 +36,13 @@ export default function About({ content }) {
 
     renderNode: {
       [BLOCKS.HEADING_2]: (node, children) => (
-        <h2 className="text-lg font-bold">{children}</h2>
+        <h2 className="text-xl font-bold text-center mt-8">{children}</h2>
       ),
       [BLOCKS.PARAGRAPH]: (node, children) => (
         <p className="text-xl leading-8">{children}</p>
       ),
       [BLOCKS.UL_LIST]: (node, children) => (
-        <ul className="list-disc ml-8">{children}</ul>
+        <ul className="list-disc ml-2">{children}</ul>
       ), // note: same as "unordered-list" as str
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
         <Image
